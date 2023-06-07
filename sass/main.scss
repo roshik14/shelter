@@ -1,0 +1,27 @@
+// Abstract
+@import "abstract/constants";
+@import "abstract/mixins";
+
+// Base
+@import "base/normalize";
+@import "base/base";
+
+// Layout
+@import "layout/container";
+@import "layout/flex-block";
+
+// Components
+@import "components/header";
+@import "components/button";
+@import "components/card";
+@import "components/slider";
+@import "components/about_us";
+@import "components/pets.scss";
+@import "components/modal";
+@import "components/donation";
+@import "components/help";
+@import "components/footer";
+
+//Pages
+@import "pages/main_page";
+@import "pages/pets_page";

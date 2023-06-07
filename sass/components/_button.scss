@@ -1,0 +1,14 @@
+.button-with-hover {
+  transition: 0.3s linear;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-brand-hover;
+  }
+}
+
+.button {
+  background-color: $color-brand;
+  padding: 1.5rem 4.5rem;
+  border-radius: 100px;
+}

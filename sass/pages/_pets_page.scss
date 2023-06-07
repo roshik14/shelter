@@ -1,0 +1,104 @@
+.pets-page-section {
+  @include media-tablet {
+    padding-bottom: 77px;
+  }
+
+  @include media-mobile {
+    padding-bottom: 42px;
+  }
+}
+
+.pets-burger-menu {
+  span {
+    border: 1px solid $color-black;
+  }
+}
+
+.pets-burger-menu-active {
+  span {
+    border: 1px solid $color-white;
+  }
+}
+
+.pets-logo-header {
+  color: $color-heading;
+}
+
+.pets-logo-subtitle {
+  margin-bottom: 30px;
+  color: $color-heading-additional;
+}
+
+.pets-nav-link {
+  color: $color-heading;
+}
+
+.pets-nav-link:hover {
+  color: $color-heading-additional;
+}
+
+.pagination {
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 30px;
+  margin-top: 60px;
+  overflow: hidden;
+
+  @media (max-width: 1270px) {
+    margin: 20px 30px 0;
+    column-gap: 40px;
+    max-height: 1400px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 30px auto 0;
+    column-gap: 10px;
+  }
+
+  @include media-with-burger {
+    margin: 42px 30px 0;
+  }
+
+  @media (max-width: 500px) {
+    column-gap: 0;
+    margin-left: 15px;
+  }
+}
+
+.pagination-buttons {
+  column-gap: 20px;
+
+  max-width: 340px;
+  margin: 65px auto 0;
+
+  @include media-tablet {
+    margin: 40px auto 0;
+  }
+
+  @include media-with-burger {
+    margin-top: 42px;
+  }
+
+  @media (max-width: 355px) {
+    margin: 42px auto 0;
+    column-gap: 10px;
+  }
+}
+
+.pagination-button {
+  margin: 0;
+  font-family: $font-georgia;
+  font-size: 2rem;
+  line-height: 1.15em;
+  letter-spacing: 0.06em;
+  color: $color-heading-additional;
+}
+
+.pagination-button:disabled {
+  pointer-events: none;
+  border-color: $color-text-additional;
+}
+
+.pets-page-header {
+  padding-bottom: 30px;
+}

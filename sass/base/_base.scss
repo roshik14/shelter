@@ -1,0 +1,77 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+* {
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav,
+h1,
+h2,
+h3,
+p,
+hr {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.disable-scrolling {
+  overflow-y: hidden;
+}
+
+.gray-color-background {
+  background-color: $color-background;
+}
+
+.has-transition {
+  transition: 0.3s linear;
+}
+
+.paragraph-text {
+  font-family: $font-arial;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+}
+
+.section-offset {
+  padding-bottom: 100px;
+  padding-top: 80px;
+
+  @include media-with-burger {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+
+.section-header {
+  font-family: $font-georgia;
+  font-size: 3.5rem;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+  color: $color-heading;
+
+  @include header-mobile-font;
+}
+
+.section-button {
+  font-size: 1.7rem;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+  color: $color-heading-additional;
+}

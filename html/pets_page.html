@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="icon" type="image/x-icon"
+			href="../assets/icons/general/favicon.ico">
+		<link rel="stylesheet" href="../build/main.css">
+		<script defer src="../js/burger_menu.js"></script>
+		<script defer type="module" src="../js/pagination.js"></script>
+		<script defer type="module" src="../js/popup.js"></script>
+		<title>Pets</title>
+	</head>
+	<body>
+		<header class="container">
+			<div class="header-container flex-container">
+				<div id="logo" class="logo">
+					<a href="">
+						<h1 class="logo-header pets-logo-header">Cozy House</h1>
+						<p class="logo-subtitle pets-logo-subtitle">Shelter for pets in Boston</p>
+					</a>
+				</div>
+				<button class="has-transition burger-menu pets-burger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<nav>
+					<ul class="flex-container menu-transition header-list">
+						<li>
+							<a href="main_page.html" class="has-transition nav-link
+								paragraph-text pets-nav-link">
+								About the shelter
+							</a>
+						</li>
+						<li>
+							<a class="nav-link not-active-link paragraph-text pets-nav-link">
+								<span>Our pets</span>
+								<hr class="disabled-link-underline">
+							</a>
+						</li>
+						<li>
+							<a href="main_page.html#help" class="has-transition nav-link
+								paragraph-text pets-nav-link">Help the shelter</a>
+						</li>
+						<li>
+							<a href="#contacts" class="has-transition nav-link
+								paragraph-text pets-nav-link">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section id="pets" class="gray-color-background">
+				<div class="container section-offset pets-page-section">
+					<h3 class="section-header pets-section-header">
+						Our friends who<br> are looking for a house
+					</h3>
+					<div class="flex-container paginations-container cards-container">
+					</div>
+					<ul class="flex-container pagination-buttons">
+						<li>
+							<button class="slider-switch-button
+								pagination-button pagination-first-button
+								button-with-hover">&lt;&lt;</button>
+						</li>
+						<li>
+							<button class="slider-switch-button pagination-button
+								pagination-prev-button
+								button-with-hover">&lt;</button>
+						</li>
+						<li>
+							<button class="slider-switch-button
+								pagination-button pagination-current-button
+								button-with-hover">1</button>
+						</li>
+						<li>
+							<button class="slider-switch-button
+								pagination-button pagination-next-button
+								button-with-hover">&gt;</button>
+						</li>
+						<li>
+							<button class="slider-switch-button
+								pagination-button pagination-last-button
+								button-with-hover">&gt;&gt;</button>
+						</li>
+					</ul>
+				</div>
+				<div data-close="true" class="modal">
+					<div class="modal-window">
+						<button class="modal-close-btn button-with-hover"></button>
+						<div class="flex-container modal-content">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer-background">
+			<div class="container">
+				<div class="flex-container footer">
+					<div id="contacts" class="contacts-section">
+						<h4 class="footer-header">For questions and suggestions</h4>
+						<a href="">
+							<div class="flex-container contacts-item">
+								<img src="../assets/icons/general/mail.svg" alt="mail image">
+								<p class="footer-item-text">email@shelter.com</p>
+							</div>
+						</a>
+						<a href="">
+							<div class="flex-container contacts-item contacts-phone-item">
+								<img src="../assets/icons/main-page/phone.svg" alt="phone
+									image">
+								<p class="footer-item-text">+13 674 567 75 54</p>
+							</div>
+						</a>
+					</div>
+					<div id="locations" class="locations">
+						<h4 class="footer-header">We are waiting for your
+							visit</h4>
+						<a href="">
+							<div class="flex-container locations-item locations-first-item">
+								<img src="../assets/icons/general/pin.svg" alt="pin image">
+								<p class="footer-item-text">1 Central Street, Boston (entrance
+									from the store)</p>
+							</div>
+						</a>
+						<a href="">
+							<div class="flex-container locations-item">
+								<img src="../assets/icons/general/pin.svg" alt="pin image">
+								<p class="footer-item-text">18 South Park, London</p>
+							</div>
+						</a>
+					</div>
+					<img class="footer-image"
+						src="../assets/images/footer-puppy.png" alt="puppy image">
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

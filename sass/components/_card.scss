@@ -1,0 +1,42 @@
+.card {
+  border-radius: 0.9rem;
+  max-width: 270px;
+  text-align: center;
+  background-color: $color-additional;
+
+  transition: 0.3s linear;
+
+  &:hover {
+    cursor: pointer;
+    .button {
+      background-color: $color-brand-hover;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    margin: 10px auto;
+  }
+}
+
+.card-pet-name {
+  margin: 28px 0;
+  font-family: $font-georgia;
+  font-size: 2rem;
+  line-height: 1.1em;
+  color: $color-heading;
+  letter-spacing: 0.06em;
+}
+
+.card-button {
+  margin-bottom: 30px;
+  padding: 14px 42px;
+  border: 2px solid $color-brand;
+
+  font-family: $font-georgia;
+  font-size: 1.7rem;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+  color: $color-heading-additional;
+
+  background-color: $color-additional;
+}

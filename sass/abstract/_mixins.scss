@@ -1,0 +1,41 @@
+@mixin media-desktop {
+  @media (max-width: $small-desktop) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin media-with-burger {
+  @media (max-width: $burger-show) {
+    @content;
+  }
+}
+
+@mixin switch-display($displayType) {
+  @media (max-width: $burger-show) {
+    display: $displayType;
+  }
+}
+
+@mixin center-text {
+  @media (max-width: $burger-show) {
+    text-align: center;
+  }
+}
+
+@mixin header-mobile-font {
+  @media (max-width: $burger-show) {
+    font-size: 2.5rem;
+  }
+}

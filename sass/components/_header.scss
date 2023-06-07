@@ -1,0 +1,152 @@
+.header-container {
+  justify-content: space-between;
+  padding-top: 3rem;
+
+  @media (max-width: 800px) {
+    justify-content: start;
+    column-gap: 60px;
+  }
+
+  @include media-tablet {
+    column-gap: 81px;
+  }
+
+  @media (max-width: $burger-show) {
+    display: grid;
+    grid-template-columns: 80% 3%;
+    column-gap: 63px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: 75% 3%;
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 73% 3%;
+  }
+
+  @media (max-width: 320px) {
+    grid-template-columns: 67% 3%;
+  }
+}
+
+.logo {
+  max-width: 18.4rem;
+}
+
+.logo-header {
+  font-family: $font-georgia;
+  font-size: 3.1rem;
+  line-height: 1.1em;
+  letter-spacing: 0.07em;
+  color: $color-brand;
+}
+
+.logo-subtitle {
+  margin: 10px 0 0 5px;
+
+  font-size: 1.3rem;
+  line-height: 1.15em;
+  letter-spacing: 0.13em;
+  color: $color-white;
+
+  @include media-tablet {
+    margin-top: 12px;
+  }
+}
+
+.burger-menu {
+  background: none;
+  border: none;
+  display: none;
+  padding: 0;
+  width: 30px;
+  height: 32px;
+  margin-top: 19px;
+
+  z-index: 3;
+
+  span {
+    display: block;
+    border: 2px solid $color-brand;
+    margin-bottom: 7px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 15px;
+  }
+  @include switch-display(block);
+}
+
+.burger-menu-active {
+  transform: rotate(-90deg);
+}
+
+.menu-transition {
+  transition: transform 0.3s;
+}
+
+.header-list {
+  margin-top: 16px;
+  column-gap: 36px;
+
+  @include media-with-burger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    width: 32rem;
+    height: 100%;
+    padding-top: 24.8rem;
+    margin: 0 auto;
+    background-color: $color-heading-additional;
+    row-gap: 40px;
+    transform: translateX(100%);
+
+    li {
+      text-align: center;
+    }
+
+    @include media-mobile {
+      margin: 0;
+    }
+  }
+}
+
+.header-list-active {
+  transform: translateX(0%);
+}
+
+.nav-link {
+  font-family: $font-arial;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  color: $color-text-additional;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  @media (max-width: ($tablet-width - 1)) {
+    font-size: 3.2rem;
+  }
+}
+
+.not-active-link {
+  pointer-events: none;
+}
+
+.disabled-link-underline {
+  height: 0.3rem;
+  background-color: $color-brand;
+
+  @media (max-width: 767px) {
+    margin: 0 3.8rem;
+  }
+}

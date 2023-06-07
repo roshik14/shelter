@@ -1,0 +1,115 @@
+.donation-section {
+  column-gap: 30px;
+  padding-bottom: 0;
+
+  @include media-desktop {
+    flex-direction: column-reverse;
+  }
+
+  @include media-tablet {
+    padding-bottom: 100px;
+  }
+
+  @include media-with-burger {
+    padding-bottom: 42px;
+  }
+}
+
+.donation-content {
+  max-width: 380px;
+
+  @include media-desktop {
+    margin: 0 auto;
+  }
+}
+
+.donation-section-image {
+  margin: 10px 0 90px 143px;
+  width: 505px;
+  height: 261px;
+
+  @include media-desktop {
+    margin: 0 131px;
+  }
+
+  @include media-tablet {
+    margin: 0 auto;
+  }
+
+  @include media-with-burger {
+    width: 260px;
+    height: 135px;
+  }
+}
+
+.donation-section-header {
+  max-width: 300px;
+
+  @include header-mobile-font;
+  @include center-text;
+}
+
+.donation-subtitle {
+  margin: 20px 0 18px;
+
+  font-family: $font-georgia;
+  font-size: 1.5rem;
+  line-height: 1.1em;
+  letter-spacing: 0.06em;
+  color: $color-heading;
+
+  @include media-with-burger {
+    font-size: 1.35rem;
+    margin: 23px 10px 0 12px;
+  }
+}
+
+.donation-button {
+  max-width: 350px;
+  border-radius: 9px;
+  background-color: $color-brand;
+
+  @include media-with-burger {
+    max-width: 280px;
+    margin: 25px auto 0;
+  }
+}
+
+.donation-button-image {
+  margin: 10px 15px;
+}
+
+.donation-button-text {
+  margin: 10px 15px 10px 0;
+  font-family: $font-georgia;
+  font-size: 2rem;
+  line-height: 1.15em;
+  letter-spacing: 0.06em;
+  color: $color-heading;
+
+  @include media-with-burger {
+    font-size: 1.5rem;
+    line-height: 1.1em;
+    margin: 13px 10px 13px 0;
+  }
+}
+
+.legal-information {
+  margin: 20px 0 100px 0;
+  font-family: $font-arial;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  font-style: italic;
+  color: $color-dark-gray;
+
+  @include media-desktop {
+    margin-bottom: 60px;
+  }
+
+  @include media-with-burger {
+    max-width: 280px;
+    text-align: justify;
+    margin-bottom: 42px;
+    margin: 20px auto 42px;
+  }
+}
